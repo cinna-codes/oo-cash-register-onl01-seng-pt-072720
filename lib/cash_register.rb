@@ -38,7 +38,7 @@ class CashRegister
       self.total = 0.0
       #return self.total
     end
-    return self.total
+    return @total
   end
 
 end

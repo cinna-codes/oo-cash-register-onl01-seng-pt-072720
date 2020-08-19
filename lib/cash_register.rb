@@ -37,6 +37,7 @@ class CashRegister
     # @total = self.total - hash[items.pop]
     # items.pop
     self.total = self.total - self.items_with_prices[self.items.pop]
+    items.pop
     return self.total
   end
 

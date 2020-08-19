@@ -2,19 +2,19 @@ class CashRegister
   attr_accessor :total, :discount, :items, :items_with_prices
 
   def initialize(discount = nil)
-    @total = 0
-    @discount = discount
+    self.total = 0
+    self.discount = discount
   end
 
   def add_item(title, price, quantity = 1)
     actual_price = price * quantity
-    @total = @total + actual_price
-    @items ||= []
+    self.total = self.total + actual_price
+    self.items ||= []
     quantity.times do
-      @items << title
+      self.items << title
     end
-    @items_with_prices ||= {}
-    @items_with_prices[title] = price
+    self.items_with_prices ||= {}
+    self.items_with_prices[title] = price
   end
 
   def apply_discount

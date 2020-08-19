@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount, :items
+  attr_accessor :total, :discount, :items, :items_with_prices
 
   def initialize(discount = nil)
     @total = 0
@@ -31,11 +31,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    # items.pop.price
-    # items.pop.hash?
-    # hash[items.pop] ???
-    # @total = self.total - hash[items.pop]
-    # items.pop
     self.total = (self.total - (self.items_with_prices[self.items.last])).to_i
     items.pop
     return self.total

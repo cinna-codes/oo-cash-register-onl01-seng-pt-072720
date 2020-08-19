@@ -10,7 +10,7 @@ class CashRegister
     actual_price = price * quantity
     @total = @total + actual_price
     @items ||= []
-    @items << title
+    @items << title * quantity
   end
 
   def apply_discount

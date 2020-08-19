@@ -36,7 +36,7 @@ class CashRegister
     # hash[items.pop] ???
     # @total = self.total - hash[items.pop]
     # items.pop
-    self.total = (self.total - (self.items_with_prices[self.items.last]))
+    self.total = (self.total - (self.items_with_prices[self.items.last])).to_i
     items.pop
     return self.total
     if items == []

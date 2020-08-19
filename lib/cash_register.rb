@@ -39,6 +39,10 @@ class CashRegister
     self.total = self.total - self.items_with_prices[self.items.pop]
     items.pop
     return self.total
+    if items == []
+      self.total = 0.0
+      return self.total
+    end
   end
 
 end

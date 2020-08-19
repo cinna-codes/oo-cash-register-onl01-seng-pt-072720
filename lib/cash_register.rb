@@ -30,6 +30,8 @@ class CashRegister
 
   def void_last_transaction
     # items.pop.price
+    # items.pop.hash?
+    # hash[items.pop] ???
   end
 
 end

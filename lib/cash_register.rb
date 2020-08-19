@@ -41,7 +41,7 @@ class CashRegister
     return self.total
     if items == []
       self.total = 0.0
-      return self.total
+      #return self.total
     end
   end
 

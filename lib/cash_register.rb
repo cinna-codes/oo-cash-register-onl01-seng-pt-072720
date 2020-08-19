@@ -32,6 +32,7 @@ class CashRegister
     # items.pop.price
     # items.pop.hash?
     # hash[items.pop] ???
+    # items.pop
   end
 
 end

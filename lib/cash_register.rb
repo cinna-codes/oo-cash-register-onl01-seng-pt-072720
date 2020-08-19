@@ -13,6 +13,8 @@ class CashRegister
     quantity.times do
       @items << title
     end
+    @items_with_prices ||= {}
+    @items_with_prices[title] = price
   end
 
   def apply_discount

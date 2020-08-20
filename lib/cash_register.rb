@@ -18,17 +18,29 @@ class CashRegister
   # end
 
 
+  # def add_item(title, price, quantity = 1)
+  #     @price = price
+  #     @total = @total + price
+  #     @items ||= []
+  #     quantity.times do
+  #       @items << title
+  #     end
+  #
+  #     @last_quantity_bought = quantity
+  #     @last_price = price ## yes, we already have a reference to this as @price, but this is just
+  #                                    ## setting a new variable explicitly for our use case
+  #   end
+
   def add_item(title, price, quantity = 1)
       @price = price
-      @total = @total + price
+      @total = @total + (price * quantity)
       @items ||= []
       quantity.times do
         @items << title
       end
 
       @last_quantity_bought = quantity
-      @last_price = price ## yes, we already have a reference to this as @price, but this is just
-                                     ## setting a new variable explicitly for our use case
+      @last_price = price
     end
 
     def void_last_transaction

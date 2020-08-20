@@ -6,30 +6,7 @@ class CashRegister
     @discount = discount
   end
 
-  # def add_item(title, price, quantity = 1)
-  #   actual_price = price * quantity
-  #   @total = @total + actual_price
-  #   @items ||= []
-  #   quantity.times do
-  #     @items << title
-  #   end
-  #   @items_with_prices ||= {}
-  #   @items_with_prices[title] = price
-  # end
 
-
-  # def add_item(title, price, quantity = 1)
-  #     @price = price
-  #     @total = @total + price
-  #     @items ||= []
-  #     quantity.times do
-  #       @items << title
-  #     end
-  #
-  #     @last_quantity_bought = quantity
-  #     @last_price = price ## yes, we already have a reference to this as @price, but this is just
-  #                                    ## setting a new variable explicitly for our use case
-  #   end
 
   def add_item(title, price, quantity = 1)
       @price = price
